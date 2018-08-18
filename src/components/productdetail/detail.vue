@@ -6,9 +6,6 @@
         <div id="detail_pic_box">
           <div id="detail_pic" class="">
             <p>
-              <br>
-            </p>
-            <p>
               <img class="lazy descimg0"
                    src="//image-shop.chuchujie.com/culiu.cdn/image/201805/15/81a2db61c300cb2e44b48fb0c1762411.jpeg?imageView2/2/w/800/q/60|imageMogr2/format/jpg"
                    data-original="//image-shop.chuchujie.com/culiu.cdn/image/201805/15/81a2db61c300cb2e44b48fb0c1762411.jpeg?imageView2/2/w/800/q/60|imageMogr2/format/jpg"
@@ -20,9 +17,6 @@
             <p>
               <img class="lazy descimg2"
                    src="//s3.mogucdn.com/mlcdn/55cf19/180408_30flfdlh05h9e465ick4ejgg2el0l_750x750.jpg_750x999.jpg">
-            </p>
-            <p>
-              <br>
             </p>
             <div
               style="text-align:center;font-size:0px;color:#333333;font-family:tahoma, arial, sans-serif;background-color:#FFFFFF;">

@@ -168,32 +168,32 @@
                     <div class="module-five">
                       <ul class="mui-flex">
                         <li class="mui-basis" v-for="(p,index) in module[1].product_list" :key="index">
-                          <a class="buyNativeClickEvent"
-                             :productindex="index"
-                             :productid="p.product_id"
-                             :moduleid="'module__'+module[1].id">
+                          <router-link class="buyNativeClickEvent"
+                                       :to="{name:'productdetail',params:{id:p.product_id}}"
+                                       :productindex="index"
+                                       :moduleid="'module__'+module[1].id">
                             <div class="shop-pic">
                               <img :src="p.image_urls_head">
                               <ul class="merit">
                                 <li>
-                                  <span bgc="5" style="opacity:0.8;">{{p.selling_point}}</span>
+                                  <span>{{p.selling_point}}</span>
                                 </li>
                               </ul>
                             </div>
                             <div class="shop-info">
                               <h5 class="wordall">{{p.product_promotion_title}}</h5>
                               <div class="item-detail clearfix">
-                              <span class="mui-price fl" clr="3" style="">
+                              <span class="mui-price fl">
                                 <i class="mui-price-rmb">¥</i>
                                 <span class="mui-price-integer">{{p.minprice}}</span>
                               </span>
                                 <del class="mui-price-del fr">￥{{p.price}}</del>
                               </div>
-                              <div class="btn btn-default" bgc="1" clr="1" btxt="over" style="">
+                              <div class="btn btn-default">
                                 {{module[1].btnLetters}}
                               </div>
                             </div>
-                          </a>
+                          </router-link>
                         </li>
                       </ul>
                     </div>
@@ -544,6 +544,7 @@
                       border-top-right-radius: 100px;
                       border-bottom-right-radius: 100px;
                       background: #FC5474;
+                      opacity:0.8;
                       max-width: 100%;
                       overflow: hidden;
                       text-overflow: ellipsis;

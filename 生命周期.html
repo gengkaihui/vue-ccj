@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>珠峰培训 http://www.zhufengpeixun.cn</title>
+</head>
+<body>
+<div id="app">
+  <component1></component1>
+  <component2></component2>
+</div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+  // 生命周期：beforeCreate created
+  //         beforeMount  mounted
+  //         beforeUpdate updated
+  //         beforeDestroy destroyed
+  let vm = new Vue({ // 根实例，初始化时会调用很多方法（钩子函数）
+    el:"#app",
+    beforeCreate(){}, //1. 此方法用不到
+    data:{a:1,b:''},
+    created(){}, // 2.获取ajax（不会等待，继续往下走），初始化操作；
+    template:'<div>{{a}}</div>', //4.如果有template属性会用模板替换掉外部html（即app中的内容），只要有此属性，此页面就不能有<div id="app"></div>；只能有一个根元素，不能是文本节点
+    beforeMount(){}, //5.没有什么实际意义
+    mounted(){},// 6.真实dom渲染完了，此时可以操作dom
+    beforeUpdate(){}, // 7.更新前/更新后，一般用watch替换掉
+    updated(){},
+    beforeDestroy(){alert('销毁前')}, // 9.销毁前，可以清除定时器、清除事件绑定
+    destroyed(){alert('销毁后')},//10.销毁后
+  });
+  vm.$mount('#app');//3.看是否有编译的元素el，如果没有，使用vm.$mount('#app');然后才会往下走
+  vm.$destroy();//8.当调用vm.$destroy();时会触发9、10
+</script>
+</body>
+</html>

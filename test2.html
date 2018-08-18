@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>珠峰培训</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<div id="app">
+  <!--加“/”-->
+  <router-link to="/home" tag="button">首页</router-link>
+  <button @click="goBack">后退</button>
+  <router-view></router-view>
+</div>
+
+<script src="node_modules/vue/dist/vue.js"></script>
+<script src="node_modules/vue-router/dist/vue-router.js"></script>
+<script src="test.js"></script>
+<script type="text/javascript">
+  //home组件
+  let home = {template: `<div>首页</div>`}
+  //路由设置
+  let routes = [
+    {path: "", component: home},//默认显示的路由
+    {path: "/home", component: home},//路径必须加“/”，匹配到路由'/home'后渲染组件home
+    {path: "*", redirect: '/home'}, //都匹配不到的时候，重定向到首页
+  ];
+  let router = new VueRouter({//注入路由实例
+    routes,
+    linkActiveClass: "active"//更改链接激活时的类名，默认是router-link-active
+  })
+  let vm = new Vue({
+    el: "#app",
+    router,
+    methods: {
+      goBack(){
+        window.history.length > 1
+          ? this.$router.go(-1)//后退一级
+          : this.$router.push('/')//强制跳转路径
+      }
+    },
+  })
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,227 @@
+[
+  {
+    "req_data": {
+      "method": "get_order_coupon_list",
+      "gender": "1",
+      "token": "ccj051564032088d4f0000947274372a1564032088",
+      "userId": "",
+      "order_data": [
+        {
+          "count": "3",
+          "currentPrice": "49.9",
+          "product_id": "1100157291546",
+          "sku_id": "75960163"
+        }
+      ],
+      "shop_id": 15729
+    },
+    "res_data": {
+      "coupon_list": [
+        {
+          "id": 13262106,
+          "user_id": 94727437,
+          "coupon_sn": "3582-06FA-06CA-3358-DE7D",
+          "status": 0,
+          "draw_time": 1532582471,
+          "shop_id": 15729,
+          "title": "",
+          "face_value": "5",
+          "start_time": 1530979200,
+          "range": "shop",
+          "end_time": 1533571199,
+          "type": "require_money",
+          "range_rule": "{\"shop_id\":\"15729\"}",
+          "message": "",
+          "limit_description": "满88元可用",
+          "coupon_description": "88减5",
+          "limit_description_price": "店内满88元可用",
+          "limit_description_range": "指定店铺",
+          "for_orders_status": 1,
+          "require_money": "88",
+          "shop_title": "咏芹旗舰店"
+        }
+      ]
+    }
+  },
+  {
+    "req_data": {
+      "method": "order_affirm",
+      "gender": "1",
+      "token": "ccj051564032088d4f0000947274372a1564032088",
+      "userId": "",
+      "order_data": [
+        {
+          "count": 3,
+          "currentPrice": "49.9",
+          "product_id": "1100157291546",
+          "sku_id": 75960163,
+          "sku_value": "尺码:M;颜色:图片色【两件套】",
+          "version": "",
+          "statics_id": 141
+        }
+      ]
+    },
+    "res_data":
+
+
+
+
+
+    {
+      "username": "15810454325",
+      "order_list": [
+        {
+          "shop_info": {
+            "id": 19083,
+            "shop_header": "飞娇铭棋专卖店",
+            "shop_message": null,
+            "shop_type": "0",
+            "shopTag": null
+          },
+          "product_list": [
+            {
+              "shop_id": "19083",
+              "product_id": "11001908355",
+              "product_sku_id": "",
+              "product_select": false,
+              "buy_num": 2,
+              "sales_price": 29.9,
+              "title": "宽松中长款字母T恤女夏装新款韩版吊带打底两件套七分袖上衣体恤",
+              "product_img_url": "https://image-shop.chuchujie.com/culiu.cdn/image/201805/15/bf140265eb85b4d208b9392a41679d66.jpeg?imageView2/2/w/720",
+              "original_price": "180",
+              "sku_values": "尺码:M;颜色:白色",
+              "stocks": 498,
+              "id_delete": "0",
+              "product_type": "0",
+              "stateMap": 0,
+              "message": "",
+              "restrictionTag": "此商品限制最多购买498件"
+            },
+            {
+              "shop_id": "19083",
+              "product_id": "11001908355",
+              "product_sku_id": "",
+              "product_select": false,
+              "buy_num": 2,
+              "sales_price": 29.9,
+              "title": "宽松中长款字母T恤女夏装新款韩版吊带打底两件套七分袖上衣体恤",
+              "product_img_url": "https://image-shop.chuchujie.com/culiu.cdn/image/201805/15/bf140265eb85b4d208b9392a41679d66.jpeg?imageView2/2/w/720",
+              "original_price": "180",
+              "sku_values": "尺码:XL;颜色:白色",
+              "stocks": 498,
+              "id_delete": "0",
+              "product_type": "0",
+              "stateMap": 0,
+              "message": "",
+              "restrictionTag": "此商品限制最多购买498件"
+            }
+          ],
+          "marketing_activity": [],
+          "shop_id": 19083,
+          "shop_select": false,
+          "user_id": "94727437",
+          "acceptable_coupon": "领券",
+          "buy_give_activity": null,
+          "current": 2,
+          "product_fee": 119.6,
+          "coupon_fee": 0,
+          "total_fee": "119.60"
+        },
+        {
+          "shop_info": {
+            "id": 5107,
+            "shop_header": "飞娇铭棋专卖店"
+          }
+        }
+      ],
+      "shipping_fee": "0",
+      "product_fee": "0119.60",
+      "all_fee": "119.60",
+      "coupon_fee": "0",
+      "pay_list": [
+        {
+          "name": "支付宝支付",
+          "payname": "alipay",
+          "icon": "https://m.chuchujie.com/img/zfb.png",
+          "payurl": "https://wappaygw.alipay.com/service/rest.htm?_input_charset=utf-8&format=xml&partner=2088901623911411&req_data=%3Cauth_and_execute_req%3E%3Crequest_token%3EUTP71d6b9446534427ea8328e3e0949ed83%2440%3C%2Frequest_token%3E%3C%2Fauth_and_execute_req%3E&req_id=20180706062805&sec_id=MD5&service=alipay.wap.auth.authAndExecute&v=2.0&sign=4749e1bf468964e5124f5a7f63bf114e",
+          "status": 1,
+          "actTitle": [],
+          "actDescription": "",
+          "defaultActive": true,
+          "extend": true,
+          "imgUrl": "https://image-shop.chuchujie.com/culiu.cdn/image/201806/13/a0bb96266a8f5d2de7d93de1e954be9f1528874272_242_30.png"
+        },
+        {
+          "name": "微信支付",
+          "payname": "wechatpay",
+          "icon": "https://m.chuchujie.com/img/weixin.png",
+          "payurl": "https://wappaygw.alipay.com/service/rest.htm?_input_charset=utf-8&format=xml&partner=2088901623911411&req_data=%3Cauth_and_execute_req%3E%3Crequest_token%3EUTP71d6b9446534427ea8328e3e0949ed83%2440%3C%2Frequest_token%3E%3C%2Fauth_and_execute_req%3E&req_id=20180706062805&sec_id=MD5&service=alipay.wap.auth.authAndExecute&v=2.0&sign=4749e1bf468964e5124f5a7f63bf114e",
+          "status": 1,
+          "actTitle": [],
+          "actDescription": "",
+          "defaultActive": false,
+          "extend": true,
+          "imgUrl": "http://image-shop.chuchujie.com/culiu.cdn/image/201609/20/d616c049d78b24b8054cc118713bad761474362620_162_28.png"
+        },
+        {
+          "name": "QQ钱包",
+          "payname": "qqpay",
+          "icon": "https://m.chuchujie.com/img/qqpay.png",
+          "payurl": "https://wappaygw.alipay.com/service/rest.htm?_input_charset=utf-8&format=xml&partner=2088901623911411&req_data=%3Cauth_and_execute_req%3E%3Crequest_token%3EUTP71d6b9446534427ea8328e3e0949ed83%2440%3C%2Frequest_token%3E%3C%2Fauth_and_execute_req%3E&req_id=20180706062805&sec_id=MD5&service=alipay.wap.auth.authAndExecute&v=2.0&sign=4749e1bf468964e5124f5a7f63bf114e",
+          "status": 1,
+          "actTitle": [],
+          "actDescription": "",
+          "defaultActive": false,
+          "extend": false,
+          "imgUrl": ""
+        }
+      ],
+      "payActivity": {
+        "actTitle": "",
+        "actDesc": "",
+        "active": false,
+        "payType": "wechatpay"
+      },
+      "address": {
+        "id": 46647813,
+        "area_id": 110002007,
+        "area_list": [
+          "黑龙江省",
+          "齐齐哈尔市",
+          "梅里斯达斡尔族区"
+        ],
+        "street": "地方萨芬的",
+        "user_name": "放散阀",
+        "mobilephone": "18834345234",
+        "province": "黑龙江省",
+        "city": "齐齐哈尔市",
+        "district": "梅里斯达斡尔族区",
+        "is_default": 1,
+        "isRealNameAuthed": false
+      },
+      "error_product_datas": [],
+      "coupon": null,
+      "bonusPoint": null,
+      "request_data": {
+        "url": "https://api-order.chuchujie.com/api/order/makeorder",
+        "delay": {
+          "second": 0,
+          "desc": "当前抢购人数较多\\n请您耐心等待"
+        },
+        "is_can_pay": {
+          "status": true,
+          "desc": "非常抱歉\\n宝贝已被抢光啦!"
+        }
+      },
+      "isKepler": false,
+      "couponShop": null,
+      "unableAddress": {
+        "notice": "抱歉，您所在地区超出商家发货范围，目前无法下单~",
+        "ids": "",
+        "status": true,
+        "icon": "https://image-shop.chuchujie.com/culiu.cdn/image/201710/11/af0dc198a969e78b53fd312969425c951507715865_30_30.png"
+      }
+    }
+  }
+]
+

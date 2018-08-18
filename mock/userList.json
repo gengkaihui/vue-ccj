@@ -1,0 +1,43 @@
+[
+  {
+    "id": "94727437",
+    "username": "15810454325",
+    "password": "ee9aecdcef860f31da6b6ea7ea393878",
+    "nickname": "楚楚",
+    "login": true,
+    "head_image_url": "http://thirdwx.qlogo.cn/mmopen/vi_32/7xuoicUQqhptkqh66XfKrI1qQKEvGuvEyqNnhlYIUavHDgDPTsbP0m2wkA5RvfqFBwkVFlArVibkP1pXtW9X0XSw/132",
+    "tel": "15810454325",
+    "gender": 1,
+    "email": "",
+    "ctime": 1520951224,
+    "is_shangjia": "N",
+    "u_type": 0,
+    "ascription": 1,
+    "occupation": "初入社会",
+    "real_name": "NONE",
+    "birthday": "1969-02-02",
+    "id_number": "0",
+    "location": "北京"
+  },
+  {
+    "id": "94727437",
+    "username": "15810454326",
+    "password": "0b96d45ba90efeb4d72abce09550ea8a",
+    "nickname": "楚楚动人",
+    "login": true,
+    "head_image_url": "http://thirdwx.qlogo.cn/mmopen/vi_32/7xuoicUQqhptkqh66XfKrI1qQKEvGuvEyqNnhlYIUavHDgDPTsbP0m2wkA5RvfqFBwkVFlArVibkP1pXtW9X0XSw/132",
+    "tel": "15810454326",
+    "gender": 0,
+    "email": "",
+    "ctime": 1520951224,
+    "is_shangjia": "N",
+    "u_type": 0,
+    "ascription": 1,
+    "occupation": "初入社会",
+    "real_name": "NONE",
+    "birthday": "1969-02-02",
+    "id_number": "0",
+    "location": "北京",
+    "address": []
+  }
+]

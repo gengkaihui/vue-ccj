@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>vue-zhufeng</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+  <style type="text/css">
+    .rec {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <div v-drag class="rec"></div>
+</div>
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script>
+  let vm = new Vue({
+    el: '#app',
+    directives: {
+      drag(el){
+        el.onmousedown = function (e) {
+          let disX = e.pageX - el.offsetLeft
+          let disY = e.pageY - el.offsetTop
+          document.onmousemove = function (e) {
+            el.style.left = e.pageX - disX + 'px'
+            el.style.top = e.pageY - disY + 'px'
+          }
+          document.onmouseup = function (e) {
+            document.onmousemove = document.onmouseup = null
+          }
+          e.preventDefault()
+        }
+      }
+    },
+  });
+</script>
+</body>
+</html>
+

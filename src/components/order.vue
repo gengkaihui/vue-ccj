@@ -39,7 +39,7 @@
             </p>
             <div class="storeBox bgFFF imgclick">
               <p class="pt10 pr10 pb8 lh20 ft1 ft3 positionR">
-                <span :shopid="order.shop_id" class="storeName Idisplay" @click="toShop(order.shop_id)">{{order.shop_info.cn_name}}</span>
+                <span class="storeName Idisplay" @click="toShop(order.shop_id)">{{order.shop_info.cn_name}}</span>
                 <a href="javascript:;" class="see bg_jt pr10 ft12 positionA" @click="">
                   <span class="ftA">查看订单详情</span>
                 </a>
@@ -202,7 +202,7 @@
           console.log(this.username);
         }*/
         this.username = orderInfo.username
-        //页面alipay传来的orderInfo和页面personal传来的orderInfo中的属性应一致，应该把它们统一为order_status_type（即订单类型）
+        //页面alipay传来的orderInfo和页面personal传来的orderInfo中的属性应一致，统一为order_status_type（即订单类型）
         this.iscur = orderInfo.order_status_type
         this.getOrderList()
       },
@@ -316,7 +316,7 @@
       },
       //去店铺
       toShop(shopId){
-          this.$router.push({name:"shop",params:{shopId:shopId}})
+          this.$router.push({name:"shop",params:{id:shopId}})
       }
     },
     computed: {},

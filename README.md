@@ -1,6 +1,7 @@
 # vue_test
 
 > A Vue.js project
+
 本项目前端使用vue.js，后端使用node.js，假数据及server服务保存在mock文件夹。
 用到的技术栈主要包括：
 1、前端部分

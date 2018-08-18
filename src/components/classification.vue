@@ -123,6 +123,7 @@
           }
         }
         span {
+          /*分隔线*/
           position: absolute;
           top: 0px;
           right: 0px;
@@ -133,7 +134,7 @@
         img[lazy=loading] {
           height: 100px;
           margin: auto;
-          background: url("../assets/logo.png") no-repeat fixed center;
+          background: url("../assets/img/logo.png") no-repeat fixed center;
         }
       }
     }

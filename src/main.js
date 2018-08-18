@@ -20,8 +20,9 @@ Vue.config.productionTip = false
 
 //初始化放在Vue.use(Mint)之前
 Vue.use(VueLazyLoad,{
-  loading:'./assets/img/load.png',
-  // error:'./static/img/error-pic.jpeg'
+  // loading:'./assets/img/log_bg.png',
+  loading:require('./assets/img/log_bg.png'),
+  error:require('./assets/img/error.png')
 })
 Vue.use(Mint)
 Vue.use(ElementUI);

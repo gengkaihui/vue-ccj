@@ -28,7 +28,9 @@ const webpackConfig = merge(baseWebpackConfig, {
     // 编译输出文件名格式
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
     // 没有指定输出名的文件输出的文件名格式
-    chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
+    //chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')//-20180818
+    chunkFilename:utils.assetsPath('js/[name]-[chunkhash:8].js'),
+    publicPath:"./",//+20180818
   },
   plugins: [
     new webpack.DefinePlugin({

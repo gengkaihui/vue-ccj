@@ -5,11 +5,11 @@
 本项目前端使用vue.js，后端使用node.js，假数据及server服务保存在mock文件夹。
 用到的技术栈主要包括：
 1、前端部分
-vue.js、
+vue全家桶：vuejs+vue-router+vuex+axios
 2、后端
 node.js
-commonjs导出/引入使用js写的方法；
-express搭建服务；
+commonjs模块规范用于导出/引入模块；
+express框架搭建服务；
 fs模块用于读取/写入后台数据；
 body-parser解析请求体
 

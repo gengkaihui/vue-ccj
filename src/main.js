@@ -3,8 +3,8 @@
 //使用import命令引入组件时，可以使用在“webpack.base.conf”中配置的别名，如@表示resolve('src'),
 import Vue from 'vue'
 import App from './App.vue'//引入自己写的组件，需要用“./”
-import router from './router'
-import "./assets/reset.min.css"
+import router from './router'//路由
+import "./assets/reset.min.css"//重置css样式
 import Mint from "mint-ui"//mint-ui
 import "mint-ui/lib/style.css"
 import ElementUI from 'element-ui';//饿了么UI
@@ -16,10 +16,12 @@ import 'vue-area-linkage/dist/index.css';//也可以不引入，自己写样式
 import VueAreaLinkage from 'vue-area-linkage';//省市区三级联动选择器
 import filters from "./common/filters/filters"//用于处理浮点数小数位数
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false//默认true，vue-cli中预先设置为false以阻止vue在启动时生成生产提示。
 
 //初始化放在Vue.use(Mint)之前
 Vue.use(VueLazyLoad,{
+  //preLoad:1.3,
+  //attempt:1,
   // loading:'./assets/img/log_bg.png',
   loading:require('./assets/img/log_bg.png'),
   error:require('./assets/img/error.png')
@@ -30,7 +32,7 @@ Vue.use(VueAwesomeSwiper)
 Vue.use(crypto)
 Vue.use(VueAreaLinkage)
 //全局方法Vue.filter()统一注册自定义过滤器
-Object.keys(filters).forEach(key => {//返回filters对象中属性名组成的数组
+Object.keys(filters).forEach(key => {//Object.keys(obj)返回对象中属性名组成的数组
   Vue.filter(key, filters[key])
 })
 

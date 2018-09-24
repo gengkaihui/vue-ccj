@@ -2,9 +2,10 @@
  * Created by kaihui on 2018/6/11.
  */
 import axios from 'axios'
-axios.defaults.baseURL = 'http://localhost:3000'
+axios.defaults.baseURL = 'http://localhost:3000'//设置请求的基本路径
+// axios.interceptors.response.use(res => res.data)//将返回的结果res处理成res.data
 axios.interceptors.response.use(res => {
-  console.log(res);//{data: "注册成功", status: 200, statusText: "OK", headers: {…}, config: {…}, …}
+  console.log(res);//{data: "注册成功", status: 200, statusText: "OK", …}
   return res.data
 })
 //获取轮播图数据

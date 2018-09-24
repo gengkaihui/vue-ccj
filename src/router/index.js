@@ -30,7 +30,7 @@ Vue.use(Router)
 }*/
 
 export default new Router({
-  mode: "history",
+  mode: "history",//默认不设置是hash模式，url路径中带#
   //scrollBehavior:scrollBehavior,//
   scrollBehavior(to, from, savedPosition){
     if (savedPosition) {
@@ -71,24 +71,8 @@ export default new Router({
       component: () => import("../components/personal.vue"),
       name:"personal",
       meta: {title:"个人中心"},
+      //嵌套路由：移动端一般一级路由
       children:[
-        // {//默认内容
-        //   path:'',
-        //   component: () => import("../components/personal.vue"),
-        //   name:"personal",
-        // },
-        // {//登录
-        //   path: 'login',
-        //   component: () => import("../components/personal/login.vue"),
-        //   name:"login",
-        //   meta: {keepAlive: true,title:"登录"},
-        // },
-        // {//注册
-        //   path: 'register',
-        //   component: () => import("../components/personal/register.vue"),
-        //   name:"register",
-        //   meta: {keepAlive: true,title:"注册"},
-        // },
         {//收藏
           path: 'collection',
           component: () => import("../components/personal/collection.vue"),
@@ -176,7 +160,6 @@ export default new Router({
       meta:{title:"售后/退款"}
     },
 
-
     {
       path: '/branddetail/:id',
       component: () => import("../components/branddetail.vue"),
@@ -199,7 +182,6 @@ export default new Router({
       path: '/details/shop/:id',
       component: () => import("../components/productdetail/shop.vue"),
       name: 'shop',
-
     },
     {
       path: '/categorydetail/:id',

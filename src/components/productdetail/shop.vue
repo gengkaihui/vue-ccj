@@ -193,7 +193,7 @@
       this.getData();
     },
     mounted(){
-      //注意：应在生命周期函数mounted的this.$nextTick()中获取dom元素
+      //注意：应在this.$nextTick()中获取操作dom元素
       this.$nextTick(() => {
       })
     },
@@ -248,7 +248,7 @@
   body {
     font-size: 12px;
     min-width: 320px;
-    font-family: "\5FAE\8F6F\96C5\9ED1";
+    font-family: Arial,微软雅黑;
     font-weight: 400;
     line-height: 1.5
   }
@@ -702,16 +702,6 @@
 
   .pr20 {
     padding-right: 20px
-  }
-
-  .bg_jt {
-    background: url(/img/icon_jt_1.png) no-repeat right center;
-    background-size: 5px 9px
-  }
-
-  .down_jt {
-    background: url(/img/icon_jt_2.png) no-repeat right center;
-    background-size: 10px 6px
   }
 
   .bgno {

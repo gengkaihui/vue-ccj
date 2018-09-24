@@ -138,6 +138,13 @@
     created(){
       this.getData()
     },
+    watch:{
+        '$route':function(t,f){
+            if(f.name=="login"){//当从登录页面返回时，重新加载数据
+                this.getData()
+            }
+        }
+    },
     methods: {
       getData(){
         //获取本地存储的userinfo

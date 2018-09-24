@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 let {read, write} = require("./readAndWrite")//引用自己封装的异步读写插件
 let formatTime = require("./formatTime")//添加订单时用，获取当前时间并格式化成“年-月-日 时:分:秒”
 
-//设置跨域头
+//express搭建服务-设置跨域头：对所有路径的所有请求
 app.all('*', function (req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'Content-Type, Content-Length, Authorization, Accept, X-Requested-With');
@@ -1118,6 +1118,24 @@ app.post('/user/updateAddress', function (req, res) {
     })
   })
 })
+
+//9.7、打包发布
+/*//读取一个路径
+fs.stat('.'+pathname,function (err,stats) {
+  if(err){//如果路径不存在
+    //res.statusCode=404;//9.7
+    //res.end('NOT FOUND');//9.7
+    fs.createReadStream("index.html").pipe(res)//9.8、history路由
+  }else{
+    if(stats.isDirectory()){//如果是文件夹目录
+      //在上面require(‘path’)，使用path.join拼接
+      let p=path.join('.'+pathname,'./index.html');
+      fs.createReadStream(p).pipe(res);
+    }else{
+      fs.createReadStream('.'+pathname).pipe(res);
+    }
+  }
+});*/
 
 
 app.listen(3000)
